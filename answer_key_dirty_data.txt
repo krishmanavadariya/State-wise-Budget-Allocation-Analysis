@@ -1,0 +1,22 @@
+ILLUSTRATIVE (SYNTHETIC) DATA - NOT REAL STATISTICS
+Problems injected on purpose for cleaning practice (row numbers = line number in the CSV file):
+
+MISSING  row 5 (state=Andhra Pradesh, year=2021) column=imr
+MISSING  row 165 (state=West Bengal, year=2019) column=imr
+MISSING  row 31 (state=Chhattisgarh, year=2023) column=imr
+MISSING  row 44 (state=Haryana, year=2018) column=literacy
+MISSING  row 31 (state=Chhattisgarh, year=2023) column=literacy
+MISSING  row 112 (state=Odisha, year=2020) column=literacy
+MISSING  row 12 (state=Arunachal Pradesh, year=2022) column=dropout
+MISSING  row 116 (state=Punjab, year=2018) column=dropout
+MISSING  row 11 (state=Arunachal Pradesh, year=2021) column=infra_spend
+MISSING  row 157 (state=Uttar Pradesh, year=2023) column=infra_spend
+MISSING  row 5 (state=Andhra Pradesh, year=2021) column=enrolment
+MISSING  row 136 (state=Tamil Nadu, year=2020) column=enrolment
+OUTLIER  row 23 (state=Bihar, year=2021) column=imr: 33.9 -> 380.0  (decimal/typing error, should be about 33)
+OUTLIER  row 69 (state=Kerala, year=2019) column=health_spend: 10263.5 -> 98000.0  (extra zero, should be about 9800)
+OUTLIER  row 126 (state=Rajasthan, year=2022) column=dropout: 13.9 -> 91.0  (impossible jump, should be about 13)
+OUTLIER  row 34 (state=Goa, year=2020) column=gsdp_pc: 509097.0 -> 48000.0  (missing digit, should be about 450000)
+NAME     row 134: 'Tamil Nadu' -> 'tamil nadu ' (fix with a mapping dictionary)
+NAME     row 164: 'West Bengal' -> 'W. Bengal' (fix with a mapping dictionary)
+NAME     row 110: 'Odisha' -> 'Orissa' (fix with a mapping dictionary)
